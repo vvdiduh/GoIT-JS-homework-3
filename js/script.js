@@ -66,20 +66,139 @@
 
 ///////////////////////////// task 12
 
-function countProps(object) {
-  let propCount = 0;
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+//     for (const key in object) {
+//         console.log(key);
+//         const property = Object.hasOwnProperty(key);
+//         console.log(property);
+//         if (property) {
+//         propCount += 1;
+//         }
+//     }
+//   // Change code above this line
+//   console.log(propCount);
+//   return propCount;
+// }
+
+// countProps({name: "Mango", age: 2})
+
+///////////////////////////// task 16
+
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   const salarys = Object.values(salaries);
+//   console.log(salarys);
+//   for (const salary of salarys) {
+//     console.log(salary);
+//     totalSalary += salary;
+//     console.log(totalSalary);
+//   }
+//   // Change code above this line
+//   return totalSalary;
+// }
+
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 })
+
+///////////////////////////// task 17
+
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (const color of colors) {
+//   hexColors.push(color.hex);
+//   rgbColors.push(color.rgb);
+// }
+
+// console.log(hexColors);
+// console.log(rgbColors);
+
+///////////////////////////// task 18
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   // Change code below this line
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       return console.log(product.price);
+//     }
+//   }
+// console.log('null');
+  
+//   // Change code above this line
+// }
+
+// // getProductPrice("Radar")
+// getProductPrice("Grip")
+// // getProductPrice("Engine")
+
+///////////////////////////// task 19
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   const values = [];
+//   for (const product of products) {
+//     if (Object.keys(product).includes(propName)) {
+//       values.push(product[propName])
+//     }
+//   } console.log(values);
+
+//   return values;
+
+
+//   // Change code above this line
+// }
+
+// getAllPropValues("quantity")
+
+///////////////////////////// task 20
+
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function calculateTotalPrice(productName) {
   // Change code below this line
-    for (const key in object) {
-        console.log(key);
-        const property = Object.hasOwnProperty(key);
-        console.log(property);
-        if (property) {
-        propCount += 1;
-        }
+  let totalPrice = 0;
+  for (const product of products) {
+    
+    // console.log(product.name === productName);
+    if (product.name === productName) {
+      // console.log(product.name === productName);
+      // console.log(product.price);
+      // console.log(product.quantity);
+      totalPrice = product.price * product.quantity;
+      // console.log(totalPrice);
     }
+  }
+return totalPrice;
+
   // Change code above this line
-  console.log(propCount);
-  return propCount;
 }
 
-countProps({name: "Mango", age: 2})
+calculateTotalPrice("Blaster")
