@@ -175,30 +175,100 @@
 
 ///////////////////////////// task 20
 
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function calculateTotalPrice(productName) {
-  // Change code below this line
-  let totalPrice = 0;
-  for (const product of products) {
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//   let totalPrice = 0;
+//   for (const product of products) {
     
-    // console.log(product.name === productName);
-    if (product.name === productName) {
-      // console.log(product.name === productName);
-      // console.log(product.price);
-      // console.log(product.quantity);
-      totalPrice = product.price * product.quantity;
-      // console.log(totalPrice);
-    }
-  }
-return totalPrice;
+//     // console.log(product.name === productName);
+//     if (product.name === productName) {
+//       // console.log(product.name === productName);
+//       // console.log(product.price);
+//       // console.log(product.quantity);
+//       totalPrice = product.price * product.quantity;
+//       // console.log(totalPrice);
+//     }
+//   }
+// return totalPrice;
 
+//   // Change code above this line
+// }
+
+// calculateTotalPrice("Blaster")
+
+
+///////////////////////////// task 21
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// const { yesterday, today, tomorrow } = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// console.log(meanTemperature);
+
+///////////////////////////// task 22
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+
+// const yesterday = highTemperatures.yesterday;
+// const today = highTemperatures.today;
+// const tomorrow = highTemperatures.tomorrow;
+// const icon = highTemperatures.icon;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// return meanTemperature;
+
+///////////////////////////// task 30
+
+// function makeTask(data) {
+//   const completed = false;
+//   // const category = "General";
+//   // const priority = "Normal";
+//   // Change code below this line
+//   const { text, category = 'General', priority = "Normal", } = data;
+//   const newData = { text, category, priority, completed };
+//   console.log(newData);
+//   return newData;
+//   // Change code above this line
+// }
+
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })
+// // makeTask({})
+
+///////////////////////////// task 31
+
+// Change code below this line
+function add(...args) {
+  console.log(args);
+  let sum = 0;
+  for (const arg of args) {
+    sum += arg;
+  }
+  
+  console.log(sum);
   // Change code above this line
 }
 
-calculateTotalPrice("Blaster")
+add(15, 27)
+add(12, 4, 11, 48)
