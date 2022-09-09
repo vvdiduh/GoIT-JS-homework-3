@@ -259,16 +259,80 @@
 ///////////////////////////// task 31
 
 // Change code below this line
-function add(...args) {
-  console.log(args);
-  let sum = 0;
-  for (const arg of args) {
-    sum += arg;
-  }
+// function add(...args) {
+//   console.log(args);
+//   let sum = 0;
+//   for (const arg of args) {
+//     sum += arg;
+//   }
   
-  console.log(sum);
-  // Change code above this line
-}
+//   console.log(sum);
+//   // Change code above this line
+// }
 
-add(15, 27)
-add(12, 4, 11, 48)
+// add(15, 27)
+// add(12, 4, 11, 48)
+
+///////////////////////////// task 32
+
+// function addOverNum(...args) {
+//   let total = 0;
+//   const firstEl = args[0];
+//   console.log(firstEl);
+
+//   for (const arg of args) {
+//     if (arg > firstEl) {
+//       total += arg;
+//     }
+//     console.log(total);
+    
+//   }
+// // console.log(total);
+//   return total;
+//   // Change code above this line
+// }
+// // addOverNum(50, 15, 27)
+// addOverNum(10, 12, 4, 11, 48, 10, 8)
+
+
+///////////////////////////// task 32
+
+// function findMatches(array, ...numbers) {
+//   const matches = []; // Don't change this line
+  
+//   for (const number of numbers) {
+//     // console.log(number);
+//     // console.log(array.includes(number));
+//     if (array.includes(number)) {
+//       matches.push(number)
+//     }
+//   }
+
+//   // Change code above this line
+//   // console.log(matches);
+//   return matches;
+// }
+
+// findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7)
+
+
+///////////////////////////// task 33
+
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   }
+//   // Change code above this line
+// };
